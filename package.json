@@ -1,0 +1,83 @@
+{
+  "name": "parcel-react-typescript-tailwind",
+  "version": "1.0.0",
+  "pwaManifest": {
+    "name": "Sample parcel-react-typescript-tailwind PWA",
+    "shortName": "Sample App",
+    "start_url": ".",
+    "display": "standalone",
+    "theme": "#000000",
+    "generateIconOptions": {
+      "baseIcon": "./src/assets/logo.svg",
+      "sizes": [
+        192,
+        512
+      ],
+      "genFavicons": true
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "rules": {
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.0",
+    "@parcel/packager-xml": "^2.0.0",
+    "@parcel/transformer-svg-react": "^2.0.0",
+    "@parcel/transformer-typescript-tsc": "^2.0.0",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "parcel": "^2.0.0",
+    "parcel-config-pwa-manifest": "^0.1.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": ">=3.0.0"
+  }
+}

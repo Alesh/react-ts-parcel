@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "~*": ["./*"]
+    }
+  }
+}

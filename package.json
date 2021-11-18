@@ -1,6 +1,10 @@
 {
   "name": "parcel-react-typescript-tailwind",
   "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
   "pwaManifest": {
     "name": "Sample parcel-react-typescript-tailwind PWA",
     "shortName": "Sample App",
@@ -25,7 +29,6 @@
   "eslintConfig": {
     "env": {
       "browser": true,
-      "es2021": true
     },
     "extends": [
       "eslint:recommended",
